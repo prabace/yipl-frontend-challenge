@@ -15,78 +15,79 @@
 <body>
   <div class="header">
     <div class="top-bar">
-    <div class="logo" id="logo">
-      <div class="full-logo" id="full-logo">
-        <img src="./Assets/logo.png" alt="logo">
-        <h1>Catalog</h1>
-      </div>
+      <div class="logo" id="logo">
+        <div class="full-logo" id="full-logo">
+          <img src="./Assets/logo.png" alt="logo">
+          <h1>Catalog</h1>
+        </div>
 
-      <div id="burger-menu">
-        <span></span>
-      </div>
-      <!-- <button class="hamburger-btn" id="hamburger-menu">
+        <div id="burger-menu">
+          <span></span>
+        </div>
+        <!-- <button class="hamburger-btn" id="hamburger-menu">
         <i class="fa-solid fa-bars fa-xl"></i>
       </button> -->
 
-    </div>
+      </div>
 
 
 
-    <nav class="navbar">
-      <div class="navbar-links">
-        <a href="#">Home</a>
-        <a href="#">About Us</a>
-        <a href="#">Case Studies</a>
-        <div class="dropdown">
-          <a onclick="myFunction()" class="dropbtn" href="#">Resources <i style="margin-left: 6px;"
-              class="fa-solid fa-chevron-down"></i>
-          </a>
-          <div id="myDropdown" class="dropdown-content">
-            <a href="#create">
-              <i class="fa-solid fa-book"></i>
-              <div style="display:grid;"> 
-                <h1>Blog</h1>
-                <h2>The latest industry news, updates and info.</h2>
+      <nav class="navbar">
+        <div class="navbar-links">
+          <a href="#">Home</a>
+          <a href="#">About Us</a>
+          <a href="#">Case Studies</a>
+          <div class="dropdown">
+            <a onclick="myFunction()" class="dropbtn" href="#">Resources <i style="margin-left: 6px;"
+                class="fa-solid fa-chevron-down"></i>
+            </a>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#create">
+                <i class="fa-solid fa-book"></i>
+                <div style="display:grid;">
+                  <h1>Blog</h1>
+                  <h2>The latest industry news, updates and info.</h2>
                 </div>
-            </a>
-            <a href="#notification">
-              <i class="fa-solid fa-bolt"></i>
-              <div style="display:grid;"> 
-              <h1>Customer stories</h1>
-              <h2>Learn how our customers are making big changes.</h2>
-              </div>
-            </a>
-            <a href="#settings">
-              <i class="fa-solid fa-circle-play"></i>
-              <div style="display:grid;"> 
-                <h1>Video tutorials</h1>
-                <h2>Get up and running on new features and techniques.</h2>
+              </a>
+              <a href="#notification">
+                <i class="fa-solid fa-bolt"></i>
+                <div style="display:grid;">
+                  <h1>Customer stories</h1>
+                  <h2>Learn how our customers are making big changes.</h2>
                 </div>
-            </a>
+              </a>
+              <a href="#settings">
+                <i class="fa-solid fa-circle-play"></i>
+                <div style="display:grid;">
+                  <h1>Video tutorials</h1>
+                  <h2>Get up and running on new features and techniques.</h2>
+                </div>
+              </a>
+
+            </div>
 
           </div>
+        </div>
 
+
+
+      </nav>
+
+
+      <span class="openBtn" onclick="openSearch()"><i class="fa-solid fa-magnifying-glass"></i></span>
+
+
+      <div id="searchOverlay" class="search-overlay">
+        <span class="closebtn" onclick="closeSearch()" title="Close Overlay"><i
+            class="fa-regular fa-circle-xmark"></i></span>
+        <div class="overlay-content">
+          <form action="action_page.php">
+            <input type="text" placeholder="Search.." name="search">
+          </form>
         </div>
       </div>
-      
-      
-      
-    </nav>  
 
-     
-     <span class="openBtn" onclick="openSearch()"><i  class="fa-solid fa-magnifying-glass"></i></span>
-    
-
-    <div id="searchOverlay" class="search-overlay">
-      <span class="closebtn" onclick="closeSearch()" title="Close Overlay"><i class="fa-regular fa-circle-xmark"></i></span>
-      <div class="overlay-content">
-        <form action="action_page.php">
-          <input type="text" placeholder="Search.." name="search">
-        </form>
-      </div>
     </div>
-
-  </div>
 
 
 
@@ -193,14 +194,37 @@
   </div>
 
   <div class="sponsors">
-    <div class="logos">
-      <img src="./Assets/layers.png" alt="layers">
-      <img src="./Assets/quotient.png" alt="quotient">
-      <img src="./Assets/sisyphus.png" alt="sisyphus">
-      <img src="./Assets/hourglass.png" alt="hourglass">
-      <img src="./Assets/circooles.png" alt="circooles">
-    </div>
+      <div>
+        <i class="fa-solid fa-chevron-left"></i>
+      </div>
 
+      <div class="logos">
+       
+        <div class="logo-content">
+       <img src="./Assets/layers.png" alt="layers">
+       <h1>Layers</h1>
+      </div>
+      <div class="logo-content">
+        <img src="./Assets/quotient.png" alt="quotient">
+        <h1>Quotient</h1>
+       </div>
+       <div class="logo-content">
+        <img src="./Assets/sisyphus.png" alt="sisyphus">
+        <h1>Sisyphus</h1>
+       </div>
+       <div class="logo-content">
+        <img src="./Assets/hourglass.png" alt="hourglass">
+        <h1>Hourglass</h1>
+       </div>
+       <div class="logo-content">
+        <img src="./Assets/circooles.png" alt="circooles">
+        <h1>Circooles</h1>
+       </div>
+      </div>
+
+      <div>
+        <i class="fa-solid fa-chevron-right"></i>
+      </div>
   </div>
 
   <div class="news">
